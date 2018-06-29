@@ -1,10 +1,12 @@
 h1-search
 ===========
 
-We created this tool to fill out needs to gather information on most common
-issues on particular [HackerOne][3] bounty programs. The tool will connect to H1
-and retrieve all the public disclosed reports and display them in a local webserver. 
-You can search for specific attacks and click to see the report. 
+We created this tool to fill out the need of gathering information on most common
+issues on particular [HackerOne][3] bounty programs. h1-search will connect to H1
+and retrieve all the public disclosed reports on that specific program and display them in a local webserver. 
+Beware that __H1 has rate limit on GET requests__ so don't abuse it too much.
+
+The tool provides you the possibility of searching for specific attacks and direct link to the report. 
 h1-search was developed by David Sopas [@dsopas][1] and Paulo Silva [@pauloasilva_com][2].
 
 ## Build
