@@ -11,6 +11,7 @@ h1-search was developed by David Sopas [@dsopas][1] and Paulo Silva [@pauloasilv
 
 ```
 $ go build h1-search.go hacktivity.go
+```
 
 ## Usage
 
