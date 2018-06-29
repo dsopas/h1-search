@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='https://cdn.datatables.net/1.10.18/css/jquery.dataTables.css'>
+  <script src='https://code.jquery.com/jquery-1.11.3.js'></script>
+  <script type='text/javascript' charset='utf8' src='https://cdn.datatables.net/1.10.18/js/jquery.dataTables.js'></script>
+  <script>
+  $(document).ready( function () {$('#h1').DataTable();});
+  </script>
+</head>
+<body>
+  <table id='h1' class='display' data-page-length='50' data-order='[[2, "desc"]]'>
+    <thead>
+      <tr>
+        <th>{{.Target}} Title</th>
+        <th>Severity</th>
+        <th>URL</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{range .Reports}}
+      <tr>
+        <td>{{.Title}}</td>
+        <td>{{.Severity_rating}}</td>
+        <td>
+          <a href="https://hackerone.com{{.Url}}" target="_blank" rel="noopener">View report</a>
+        </td>
+      </tr>
+      {{end}}
+    </tbody>
+  </table>
+</body>
+</html>
