@@ -10,17 +10,20 @@ import (
     "time"
 )
 
+// TemplateData : Prepares the template with the reports from HackerOne
 type TemplateData struct{
     Target string
     Reports []Report
 }
 
+// Report : The structure of the report taken from a HackerOne report
 type Report struct {
     Title string
     Url string
-    Severity_rating string
+    SeverityRating string
 }
 
+// Response : Grab the number of reports, pages and the reports from HackerOne
 type Response struct {
     Count int
     Pages int
@@ -81,7 +84,7 @@ func main() {
         for _, r := range response.Reports {
             report := Report {
                 Title: r.Title,
-                Severity_rating: r.Severity_rating,
+                SeverityRating: r.SeverityRating,
                 Url: r.Url}
 
             templateData.Reports = append(templateData.Reports, report)
