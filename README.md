@@ -1,5 +1,6 @@
 h1-search
 ===========
+[![GPL3](https://camo.githubusercontent.com/268d96c6dd81f1fff98b19675ef5867412a2a223/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c332d627269676874677265656e2e7376673f7374796c653d666c61742d737175617265)](https://github.com/dsopas/h1-search/blob/master/LICENSE.md) [![Go Report Card](https://goreportcard.com/badge/github.com/dsopas/h1-search)](https://goreportcard.com/report/github.com/dsopas/h1-search)
 
 We created this tool to fill out the need of gathering information on most common
 issues on particular [HackerOne][3] bounty programs. h1-search will connect to H1
