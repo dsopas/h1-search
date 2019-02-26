@@ -30,6 +30,7 @@ func (h *hacktivity) String() string {
     return url.String()
 }
 
+// NewHacktivity : Prepare the results, including filters
 func NewHacktivity(to string) *hacktivity {
     h := hacktivity{
         url: baseUrl, filters: url.Values{} }
